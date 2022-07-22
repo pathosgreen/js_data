@@ -25,12 +25,12 @@
             return newEl;
         })
         .forEach(productEl =>{
-            productEl.appendChild(productEl);
+            productListEl.appendChild(productEl);
         });
         setTimeout(()=>{
             const secondEl = document.querySelector('ul li:nth-child(2)');
             secondEl.remove();
-        }, 1000);
+        }, 2000);
         productListEl.after("<div>잘못된 사용</div>");
         productListEl.insertAdjacentHTML('afterend',"<p>추가된 문단</p>")
 
